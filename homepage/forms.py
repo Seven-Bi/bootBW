@@ -13,4 +13,5 @@ class ContactForm(forms.Form):
     contact_number = forms.CharField(validators=[phone_regex], max_length=15, required=False)
     content = forms.TextField(required=False)
     # attachments check
-    attachment = forms.FileField(upload_to="", validators=[attachment_check], required=False)
+    # <form enctype="multipart/form-data" method="post" action="/foo/"> integrate to html form element
+    attachment = forms.FileField(validators=[attachment_check], required=False)
