@@ -1,0 +1,28 @@
+
+<form id="contact_form" action="/contact/" method="POST" enctype="multipart/form-data" > {% csrf_token %}
+    <div class="row">
+        <label for="contact_subject">Subject:</label><br />
+        <input id="contact_subject" class="input" name="contact_subject" type="text" value="" size="30" /><br />
+    </div>
+	<div class="row">
+		<label for="contact_name">Name:</label><br />
+		<input id="contact_name" class="input" name="contact_name" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="contact_email">Email:</label><br />
+		<input id="contact_email" class="input" name="contact_email" type="text" value="" size="30" /><br />
+	</div>
+    <div class="row">
+		<label for="contact_number">Contact Number:</label><br />
+		<input id="contact_number" class="input" name="contact_number" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="content">Your Message:</label><br />
+		<textarea id="content" class="input" name="content" rows="7" cols="30"></textarea><br />
+	</div>
+    <div class="row">
+        <label for="attachment">attachment:</label><br />
+        <input type="file" name="attachment" size="40" /><br />
+    </div>
+	<input id="submit_button" type="submit" value="Send email" />
+</form>
