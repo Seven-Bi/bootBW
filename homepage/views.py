@@ -6,6 +6,13 @@ from django.http import JsonResponse
 
 
 #######################################
+# Process Index request
+#######################################
+def index(request):
+    return render(request, 'homepage/index.html')
+
+
+#######################################
 # Process user contact form request
 #######################################
 def contact(request):
@@ -20,7 +27,7 @@ def contact(request):
             content += '\nClient Name: ' + name
             content += '\nClient Email: ' + client_email
             content += '\nClient Contact Number: ' + client_number
-            content += '\nPlease quick respond our clients (within 1 hour) and collect rough project requirements\nAt the end, schedule the next contact time and let our clients know.'
+            content += '\nPlease quick respond our clients (within 30 minutes) and collect the project requirements completely.\n'
             from_email = settings.EMAIL_HOST_USER
             to_email = ['steven.bb.0221@gmail.com']
             attachment = request.FILES['attachment']
@@ -39,4 +46,26 @@ def contact(request):
     else:
         form = ContactForm()
 
-    return render(request, 'contact/gettouch.html', {'form': form})
+    return render(request, 'homepage/contact.html', {'form': form})
+
+
+
+#######################################
+# Process Case request
+#######################################
+def case(request):
+    return render(request, 'homepage/case.html')
+
+
+#######################################
+# Process Case_show request
+#######################################
+def case_show(request):
+    return render(request, 'homepage/case_show.html')
+
+
+#######################################
+# Process About request
+#######################################
+def about(request):
+    return render(request, 'homepage/about.html')

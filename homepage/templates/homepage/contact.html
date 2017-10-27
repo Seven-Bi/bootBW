@@ -1,0 +1,235 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="{% static "homepage/images/favicon.ico" %}" type="image/x-icon"/>
+<title>BootBW</title>
+<link rel="stylesheet" href="{% static "homepage/css/style.css" %}" type="text/css">
+<script type="text/javascript" src="{% static "homepage/js/jquery.js" %}"></script>
+<script type="text/javascript" src="{% static "homepage/js/js.js" %}"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+		 $('body').on("click", ".contact_qa_title",
+            function() {
+                 if ($(this).hasClass('active')) {
+            $(this).removeClass("active").next(".contact_qa_content").slideUp(600);
+        } else {
+			var _thisP=$(this).parents(".contact_qa_list").find("contact_qa_content");
+$(".contact_qa_content").not(_thisP).slideUp(600).siblings(".contact_qa_title").removeClass("active");
+            $(this).addClass("active").next(".contact_qa_content").slideDown(600);
+        }
+            });
+			$.divselect(".divselect",".inputselect");
+		});
+	</script>
+</head>
+<body class="inner">
+<div class="auto_hide_header"><em class="menu_toggle"></em>
+<!--end.nav-->
+<a href="contact.html" class="get_in_touch">get in touch</a>
+</div>
+<!--end.auto_hide_header-->
+<div class="header inner_header"> <img class="header_bg" src="{% static "homepage/images/contact.jpg" %}" />
+<div class="header_txt"><h1>How Can We Help You?</h1><p>See what some other mates have asked.</p>
+<div class="header_arrow"><a class="animateTo" href="javascript:void(0)" go-to="go1">&#xf35d;</a></div>
+</div>
+<ul class="header_nav">
+<li><a class="animateTo" href="javascript:void(0)" go-to="go1">01.View Our FAQ's</a></li>
+<li><a class="animateTo" href="javascript:void(0)" go-to="go2">02.GET IN TOUCH</a></li>
+</ul>
+</div>
+<!--end.header-->
+<div class="main_content relative">
+<div class="center_box"><h3 class="b_title" data-number="01">
+<strong>View Our FAQ's</strong>
+<hr>
+<span>See what some other mates have asked.</span>
+</h3></div>
+<div class="contact_qa"  id="go1">
+	<div class="half_box">
+	<dl class="contact_qa_list">
+    	<dt class="contact_qa_title">Price Information </dt>
+       <dd class="contact_qa_content">
+       		<h6>How do you pay for website production? Shall I pay for it first?</h6>
+       		<p>First of all, the two sides must sign a web site contract, the contract will protect the interests and obligations of both parties, the general website construction contract will indicate the interests and obligations of both parties. After signing the contract, part of the first part of the website is paid in advance, usually paid 50%, and the work of the project is started. The terms of payment are specified by the parties to the cooperation and the program.
+  </p>
+  <h6>How much does it cost to make a website?</h6>
+       		<p>This should be all the customers are more concerned about the general demand, function and type of website is not the same, the price is not the same, before doing so, we need to know the purpose of your needs and your website, if you are tidy, we according to your need to produce what columns, realize what function we make a quotation to you again. The average enterprise show website production costs around $1500.
+  </p>
+  <h6>How do you pay for website production? Shall I pay for it first?</h6>
+       		<p>First of all, the two sides must sign a web site contract, the contract will protect the interests and obligations of both parties, the general website construction contract will indicate the interests and obligations of both parties. After signing the contract, part of the first part of the website is paid in advance, usually paid 50%, and the work of the project is started. The terms of payment are specified by the parties to the cooperation and the program.
+  </p>
+  <h6>How much does it cost to make a website?</h6>
+       		<p>This should be all the customers are more concerned about the general demand, function and type of website is not the same, the price is not the same, before doing so, we need to know the purpose of your needs and your website, if you are tidy, we according to your need to produce what columns, realize what function we make a quotation to you again. The average enterprise show website production costs around $1500.
+  </p>
+      </dd>
+    </dl>
+    <!--end.contact_qa_list-->
+    <dl class="contact_qa_list">
+    	<dt class="contact_qa_title">Customer service</dt>
+       <dd class="contact_qa_content">
+       	<h6>How do you pay for website production? Shall I pay for it first?</h6>
+       		<p>First of all, the two sides must sign a web site contract, the contract will protect the interests and obligations of both parties, the general website construction contract will indicate the interests and obligations of both parties. After signing the contract, part of the first part of the website is paid in advance, usually paid 50%, and the work of the project is started. The terms of payment are specified by the parties to the cooperation and the program.
+  </p>
+  <h6>How much does it cost to make a website?</h6>
+       		<p>This should be all the customers are more concerned about the general demand, function and type of website is not the same, the price is not the same, before doing so, we need to know the purpose of your needs and your website, if you are tidy, we according to your need to produce what columns, realize what function we make a quotation to you again. The average enterprise show website production costs around $1500.
+  </p>
+  <h6>How do you pay for website production? Shall I pay for it first?</h6>
+       		<p>First of all, the two sides must sign a web site contract, the contract will protect the interests and obligations of both parties, the general website construction contract will indicate the interests and obligations of both parties. After signing the contract, part of the first part of the website is paid in advance, usually paid 50%, and the work of the project is started. The terms of payment are specified by the parties to the cooperation and the program.
+  </p>
+  <h6>How much does it cost to make a website?</h6>
+       		<p>This should be all the customers are more concerned about the general demand, function and type of website is not the same, the price is not the same, before doing so, we need to know the purpose of your needs and your website, if you are tidy, we according to your need to produce what columns, realize what function we make a quotation to you again. The average enterprise show website production costs around $1500.
+  </p><h6>How much does it cost to make a website?</h6>
+       		<p>This should be all the customers are more concerned about the general demand, function and type of website is not the same, the price is not the same, before doing so, we need to know the purpose of your needs and your website, if you are tidy, we according to your need to produce what columns, realize what function we make a quotation to you again. The average enterprise show website production costs around $1500.
+  </p>
+      </dd>
+    </dl>
+    <!--end.contact_qa_list-->
+<dl class="contact_qa_list">
+    	<dt class="contact_qa_title">Price Information </dt>
+       <dd class="contact_qa_content">
+       		<h6>How do you pay for website production? Shall I pay for it first?</h6>
+       		<p>First of all, the two sides must sign a web site contract, the contract will protect the interests and obligations of both parties, the general website construction contract will indicate the interests and obligations of both parties. After signing the contract, part of the first part of the website is paid in advance, usually paid 50%, and the work of the project is started. The terms of payment are specified by the parties to the cooperation and the program.
+  </p>
+  <h6>How much does it cost to make a website?</h6>
+       		<p>This should be all the customers are more concerned about the general demand, function and type of website is not the same, the price is not the same, before doing so, we need to know the purpose of your needs and your website, if you are tidy, we according to your need to produce what columns, realize what function we make a quotation to you again. The average enterprise show website production costs around $1500.
+  </p>
+  <h6>How do you pay for website production? Shall I pay for it first?</h6>
+       		<p>First of all, the two sides must sign a web site contract, the contract will protect the interests and obligations of both parties, the general website construction contract will indicate the interests and obligations of both parties. After signing the contract, part of the first part of the website is paid in advance, usually paid 50%, and the work of the project is started. The terms of payment are specified by the parties to the cooperation and the program.
+  </p>
+  <h6>How much does it cost to make a website?</h6>
+       		<p>This should be all the customers are more concerned about the general demand, function and type of website is not the same, the price is not the same, before doing so, we need to know the purpose of your needs and your website, if you are tidy, we according to your need to produce what columns, realize what function we make a quotation to you again. The average enterprise show website production costs around $1500.
+  </p>
+      </dd>
+    </dl>
+    <!--end.contact_qa_list-->
+    </div>
+    <!--end.half_box-->
+    <div class="half_box">
+<dl class="contact_qa_list">
+    	<dt class="contact_qa_title">Price Information </dt>
+       <dd class="contact_qa_content">
+       		<h6>How do you pay for website production? Shall I pay for it first?</h6>
+       		<p>First of all, the two sides must sign a web site contract, the contract will protect the interests and obligations of both parties, the general website construction contract will indicate the interests and obligations of both parties. After signing the contract, part of the first part of the website is paid in advance, usually paid 50%, and the work of the project is started. The terms of payment are specified by the parties to the cooperation and the program.
+  </p>
+  <h6>How much does it cost to make a website?</h6>
+       		<p>This should be all the customers are more concerned about the general demand, function and type of website is not the same, the price is not the same, before doing so, we need to know the purpose of your needs and your website, if you are tidy, we according to your need to produce what columns, realize what function we make a quotation to you again. The average enterprise show website production costs around $1500.
+  </p>
+  <h6>How do you pay for website production? Shall I pay for it first?</h6>
+       		<p>First of all, the two sides must sign a web site contract, the contract will protect the interests and obligations of both parties, the general website construction contract will indicate the interests and obligations of both parties. After signing the contract, part of the first part of the website is paid in advance, usually paid 50%, and the work of the project is started. The terms of payment are specified by the parties to the cooperation and the program.
+  </p>
+  <h6>How much does it cost to make a website?</h6>
+       		<p>This should be all the customers are more concerned about the general demand, function and type of website is not the same, the price is not the same, before doing so, we need to know the purpose of your needs and your website, if you are tidy, we according to your need to produce what columns, realize what function we make a quotation to you again. The average enterprise show website production costs around $1500.
+  </p>
+      </dd>
+    </dl>
+    <!--end.contact_qa_list-->
+    <dl class="contact_qa_list">
+    	<dt class="contact_qa_title">Customer service</dt>
+       <dd class="contact_qa_content">
+       	<h6>How do you pay for website production? Shall I pay for it first?</h6>
+       		<p>First of all, the two sides must sign a web site contract, the contract will protect the interests and obligations of both parties, the general website construction contract will indicate the interests and obligations of both parties. After signing the contract, part of the first part of the website is paid in advance, usually paid 50%, and the work of the project is started. The terms of payment are specified by the parties to the cooperation and the program.
+  </p>
+  <h6>How much does it cost to make a website?</h6>
+       		<p>This should be all the customers are more concerned about the general demand, function and type of website is not the same, the price is not the same, before doing so, we need to know the purpose of your needs and your website, if you are tidy, we according to your need to produce what columns, realize what function we make a quotation to you again. The average enterprise show website production costs around $1500.
+  </p>
+  <h6>How do you pay for website production? Shall I pay for it first?</h6>
+       		<p>First of all, the two sides must sign a web site contract, the contract will protect the interests and obligations of both parties, the general website construction contract will indicate the interests and obligations of both parties. After signing the contract, part of the first part of the website is paid in advance, usually paid 50%, and the work of the project is started. The terms of payment are specified by the parties to the cooperation and the program.
+  </p>
+  <h6>How much does it cost to make a website?</h6>
+       		<p>This should be all the customers are more concerned about the general demand, function and type of website is not the same, the price is not the same, before doing so, we need to know the purpose of your needs and your website, if you are tidy, we according to your need to produce what columns, realize what function we make a quotation to you again. The average enterprise show website production costs around $1500.
+  </p><h6>How much does it cost to make a website?</h6>
+       		<p>This should be all the customers are more concerned about the general demand, function and type of website is not the same, the price is not the same, before doing so, we need to know the purpose of your needs and your website, if you are tidy, we according to your need to produce what columns, realize what function we make a quotation to you again. The average enterprise show website production costs around $1500.
+  </p>
+      </dd>
+    </dl>
+    <!--end.contact_qa_list-->
+    </div>
+     <!--end.half_box-->
+</div>
+<!--end.contact_qa-->
+<div class="contact_us center_box relative" id="go2">
+<h3 class="b_title" data-number="02">
+<strong>GET IN TOUCH</strong>
+<hr>
+<span>Fill out the form below and we'll get back to you as soon as possible.</span>
+</h3>
+<div class="contact_form shadow_box c_hash2">
+	<form id="contact_form" action="/contact/" method="POST" enctype="multipart/form-data" > {% csrf_token %}
+    	<div class="form_p">
+        <label class="form_label">What's your name?</label>
+        <input name="contact_name" class="form_txt" placeholder="Full name" type="text" />
+        </div>
+        <div class="form_p">
+        <label class="form_label">How should we contact you?</label>
+        <input name="contact_email" class="form_txt" placeholder="Email address" type="text" />
+        </div>
+        <div class="form_p">
+        <label class="form_label">I would like to enquire about?</label>
+        	<div class="divselect"> <cite>regarding</cite>
+                    <ul class="divselect_ul">
+                      <li><a href="javascript:;" selectid="1">Website design</a></li>
+                      <li><a href="javascript:;" selectid="2">Logo design</a></li>
+                      <li><a href="javascript:;" selectid="3">Paking design</a></li>
+                      <li><a href="javascript:;" selectid="3">I need something else</a></li>
+                    </ul>
+                    <input name="contact_subject" value="" class="inputselect" type="hidden">
+                  </div>
+        </div>
+         <div class="form_p">
+        <label class="form_label">Contact number?(optional)</label>
+        <input name="contact_number" class="form_txt" placeholder="Your telephone number" type="text" />
+        </div>
+        <div class="form_p">
+        <label class="form_label">Company Name? (optional)</label>
+        <input name="contact_company" class="form_txt" placeholder="Company or Organization" type="text" />
+        </div>
+        <div class="form_p">
+        <label class="form_label">Message</label>
+        <textarea name="content" class="form_textarea"  placeholder="Tell us a bit about yourself or details about your project"></textarea>
+        </div>
+        <div class="form_p">
+         <label class="up_loader" for="xFile">Choose file</label>
+         <input name="file_0" id="file1" class="up_text" value="">
+		<input  name="attachment" onchange="document.getElementById('file1').value=this.value" type="file" id="xFile" style="position:absolute;clip:rect(0 0 0 0);">
+        </div>
+        <div class="form_p">
+        	<input class="sub_btn" value="Seed Message" type="submit" />
+        </div>
+    </form>
+    </div>
+</div>
+<!--end.contact_us-->
+</div>
+<!--end.main_content-->
+<div class="footer">
+	<div class="block">
+    	<div class="half_box left_footer">
+        	<ul>
+            <li><a href="about.html">about us</a><a href="case.html">our case</a><a href="contact.html">contact us</a></li>
+            <li>&copy; bootbw.com . All rights reserved.</li>
+            </ul>
+        </div>
+        <div class="half_box right_footer"><a class="ScrollTopBtn" href="javascript:void(0)">Back to top</a></div>
+    </div>
+</div>
+<!--footer-->
+<div class="full_border"><div class="container"> <span class="border-1"></span> <span class="border-2"></span> <span class="border-3"></span> <span class="border-4"></span> <span class="border-5"></span> <span class="border-6"></span> <span class="border-7"></span> <span class="border-8"></span> <span class="border-9"></span></div></div>
+<div class="nav_overlay">
+<img class="nav_overlay_bg" src="{% static "homepage/images/nav_overlay_bg.jpg" %}" />
+	<div class="n_Ocontent">
+    	<a href="index.html">Home</a>
+    	<a href="about.html">About us</a>
+        <a href="case.html">our case</a>
+        <a href="contact.html">contact us</a>
+    </div>
+	<!--end.n_Ocontent-->
+    <p class="n_Obottom">&copy; bootbw.com . All rights reserved.</p>
+</div>
+<!--end.nav_overlay-->
+</body>
+</html>
