@@ -1,6 +1,6 @@
 branch-defaults:
   master:
-    environment: bootBW-dev
+    environment: bootBW-dev2
     group_suffix: null
 global:
   application_name: bootBW
