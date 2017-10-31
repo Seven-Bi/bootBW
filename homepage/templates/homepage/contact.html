@@ -160,42 +160,40 @@ $(".contact_qa_content").not(_thisP).slideUp(600).siblings(".contact_qa_title").
 </h3>
 <div class="contact_form shadow_box c_hash2">
 	<form id="contact_form" action="/contact/" method="POST" enctype="multipart/form-data" > {% csrf_token %}
-    	<div class="form_p">
+		<div class="form_p">
         <label class="form_label">What's your name?</label>
-        <input name="contact_name" class="form_txt" placeholder="Full name" type="text" />
+        {{ form.contact_name }}
         </div>
         <div class="form_p">
         <label class="form_label">How should we contact you?</label>
-        <input name="contact_email" class="form_txt" placeholder="Email address" type="text" />
+        {{ form.contact_email }}
         </div>
         <div class="form_p">
         <label class="form_label">I would like to enquire about?</label>
-        	<div class="divselect"> <cite>regarding</cite>
+        	<div class="divselect"> <cite>Regarding</cite>
                     <ul class="divselect_ul">
                       <li><a href="javascript:;" selectid="1">Website design</a></li>
                       <li><a href="javascript:;" selectid="2">Logo design</a></li>
                       <li><a href="javascript:;" selectid="3">Paking design</a></li>
                       <li><a href="javascript:;" selectid="3">I need something else</a></li>
                     </ul>
-                    <input name="contact_subject" value="" class="inputselect" type="hidden">
+                    {{ form.contact_subject }}
                   </div>
         </div>
          <div class="form_p">
         <label class="form_label">Contact number?(optional)</label>
-        <input name="contact_number" class="form_txt" placeholder="Your telephone number" type="text" />
+    	{{ form.contact_number }}
         </div>
         <div class="form_p">
         <label class="form_label">Company Name? (optional)</label>
-        <input name="contact_company" class="form_txt" placeholder="Company or Organization" type="text" />
+        {{ form.contact_company }}
         </div>
         <div class="form_p">
         <label class="form_label">Message</label>
-        <textarea name="content" class="form_textarea"  placeholder="Tell us a bit about yourself or details about your project"></textarea>
+        {{ form.content }}
         </div>
         <div class="form_p">
-         <label class="up_loader" for="xFile">Choose file</label>
-         <input name="file_0" id="file1" class="up_text" value="">
-		<input  name="attachment" onchange="document.getElementById('file1').value=this.value" type="file" id="xFile" style="position:absolute;clip:rect(0 0 0 0);">
+		 {{ form.attachment }}
         </div>
         <div class="form_p">
         	<input class="sub_btn" value="Seed Message" type="submit" />

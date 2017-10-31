@@ -23,22 +23,27 @@ def contact(request):
             name = form.cleaned_data['contact_name']
             client_email = form.cleaned_data['contact_email']
             client_number = form.cleaned_data['contact_number']
+            client_company = form.cleaned_data['contact_company']
             content = form.cleaned_data['content']
             content += '\nClient Name: ' + name
+            content += '\nClient Company: ' + client_company
             content += '\nClient Email: ' + client_email
             content += '\nClient Contact Number: ' + client_number
             content += '\nPlease quick respond our clients (within 30 minutes) and collect the project requirements completely.\n'
             from_email = settings.EMAIL_HOST_USER
             to_email = ['steven.bb.0221@gmail.com']
-            attachment = request.FILES['attachment']
+            # attachment = request.FILES['attachment']
+            attachment = form.cleaned_data['attachment']
 
             try:
                 mail = EmailMessage(subject, content, from_email, to_email)
-                if attachment:
+                if not attachment:
+                    mail.send()
+                else:
                     mail.attach(attachment.name, attachment.read(), attachment.content_type)
-                mail.send()
+                    mail.send()
             except:
-                return JsonResponse({'message': "Some errors happened, please call +610450980608."})
+                return JsonResponse({'message': "Sorry, the executable file isn't allowed."})
             return JsonResponse({'message': "Thanks for your asking, we would get back to you as soon as possible."})
         else:
             explanation = form.errors['attachment']
