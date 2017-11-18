@@ -35,16 +35,16 @@ def contact(request):
             # attachment = request.FILES['attachment']
             attachment = form.cleaned_data['attachment']
 
-            try:
+            #try:
                 mail = EmailMessage(subject, content, from_email, to_email)
                 if not attachment:
                     mail.send()
                 else:
                     mail.attach(attachment.name, attachment.read(), attachment.content_type)
                     mail.send()
-            except:
-                return JsonResponse({'message': "Sorry, the executable file isn't allowed."})
-            return JsonResponse({'message': "Thanks for your asking, we would get back to you as soon as possible."})
+            #except:
+                #return JsonResponse({'message': "Some erros happen, we are unable to send your email, please contact our support team."})
+            #return JsonResponse({'message': "Thanks for your asking, we would get back to you as soon as possible."})
         else:
             explanation = form.errors['attachment']
             return JsonResponse({'message': explanation})
