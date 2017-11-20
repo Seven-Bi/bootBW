@@ -168,19 +168,11 @@ $(".contact_qa_content").not(_thisP).slideUp(600).siblings(".contact_qa_title").
         <label class="form_label">How should we contact you?</label>
         {{ form.contact_email }}
         </div>
-        <div class="form_p">
-        <label class="form_label">I would like to enquire about?</label>
-        	<div class="divselect"> <cite>Regarding</cite>
-                    <ul class="divselect_ul">
-                      <li><a href="javascript:;" selectid="1">Website design</a></li>
-                      <li><a href="javascript:;" selectid="2">Logo design</a></li>
-                      <li><a href="javascript:;" selectid="3">Paking design</a></li>
-                      <li><a href="javascript:;" selectid="3">I need something else</a></li>
-                    </ul>
-                    {{ form.contact_subject }}
-                  </div>
-        </div>
-         <div class="form_p">
+		<div class="form_p">
+		<label class="form_label">I would like to enquire about?</label>
+		{{ form.contact_subject }}
+		</div>
+ 		<div class="form_p">
         <label class="form_label">Contact number?(optional)</label>
     	{{ form.contact_number }}
         </div>
