@@ -19,8 +19,8 @@ from homepage import views
 
 urlpatterns = [
     url(r'^contact', views.contact, name='contact'),
-    url(r'^case', views.case, name='case'),
     url(r'^case_show', views.case_show, name='case_show'),
+    url(r'^case', views.case, name='case'),
     url(r'^about', views.about, name='about'),
     url(r'^admin', admin.site.urls, name='admin'),
     url(r'^index', views.index, name='index'),
