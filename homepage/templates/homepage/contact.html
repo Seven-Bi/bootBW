@@ -24,6 +24,10 @@ $(".contact_qa_content").not(_thisP).slideUp(600).siblings(".contact_qa_title").
         }
             });
 			$.divselect(".divselect",".inputselect");
+
+			$('submit_btn').click(function(){
+				$.getJSON()
+			});
 		});
 	</script>
 </head>
@@ -185,10 +189,12 @@ $(".contact_qa_content").not(_thisP).slideUp(600).siblings(".contact_qa_title").
         {{ form.content }}
         </div>
         <div class="form_p">
-		 {{ form.attachment }}
+			<label class="up_loader" for="xFile">Choose file</label>
+			<input name="file_0" id="file1" class="up_text" value="">
+			{{ form.attachment }}
         </div>
         <div class="form_p">
-        	<input class="sub_btn" value="Seed Message" type="submit" />
+        	<input id= "submit_btn" class="sub_btn" value="Seed Message" type="submit" />
         </div>
     </form>
     </div>

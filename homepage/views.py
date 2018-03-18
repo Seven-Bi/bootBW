@@ -32,7 +32,6 @@ def contact(request):
             content += '\nPlease quick respond our clients (within 30 minutes) and collect the project requirements completely.\n'
             from_email = settings.EMAIL_HOST_USER
             to_email = ['steven.bb.0221@gmail.com']
-            # attachment = request.FILES['attachment']
             attachment = form.cleaned_data['attachment']
 
             try:

@@ -12,4 +12,4 @@ class ContactForm(forms.Form):
     contact_number = forms.CharField(max_length=20, required=False, widget=forms.TextInput(attrs={'class' : 'form_txt', 'placeholder' : 'Your contact number'}))
     contact_company = forms.CharField(max_length=30, required=False, widget=forms.TextInput(attrs={'class' : 'form_txt', 'placeholder' : 'Company name'}))
     content = forms.CharField(min_length=15, widget=forms.Textarea(attrs={'class' : 'form_textarea', 'placeholder' : 'Descirbe your project details'}), required=True)
-    attachment = forms.FileField(required=False, validators=[verify_file])
+    attachment = forms.FileField(required=False, validators=[verify_file], widget=forms.FileInput(attrs={'onChange' : 'document.getElementById(\'file1\').value=this.value', 'id' : 'xFile', 'style' : 'position:absolute;clip:rect(0 0 0 0);'}))
