@@ -1,8 +1,4 @@
 @charset "utf-8";
-/*! 
- * design by derek.wang
- * version: 1.0
- */
 
 .a-fadeinL, .a-fadeinR, .a-fadeinT, .a-fadeinB { -webkit-animation: 1s ease-out backwards; -moz-animation: 1s ease-out backwards; -ms-animation: 1s ease-out backwards; animation: 1s ease-out backwards; }
  /* 上跳 */
