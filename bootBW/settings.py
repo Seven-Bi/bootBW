@@ -22,7 +22,7 @@ SECRET_KEY = '(s3lhb@r&t!_59pbcvo1hc@pl!rf*c#%m#*83^*9e4@#z_h@+7'
 DEBUG = True
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['www.bootbw.com']
 
 
