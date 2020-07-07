@@ -17,6 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from homepage import views
 
+
 urlpatterns = [
     url(r'^contact', views.contact, name='contact'),
     url(r'^case_show', views.case_show, name='case_show'),
