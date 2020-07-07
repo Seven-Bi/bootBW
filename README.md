@@ -1,8 +1,9 @@
 # bootBW
 
-## Version 1.0
+## Version 1.0 
+## pure django + html + css + js
 
-<p>This is a sample website that for showing how is our web design and introducing our IT services in details</p>
+<p>This is a sample website that for small-mid business showing their services</p>
 
 ---
 ![Screenshot](https://github.com/Seven-Bi/bootBW/blob/master/homepage/static/homepage/images/A.png)
@@ -12,3 +13,7 @@
 
 ---
 ![Screenshot](https://github.com/Seven-Bi/bootBW/blob/master/homepage/static/homepage/images/C.png)
+
+
+
+[ >> live demo check](https://calm-tor-88874.herokuapp.com/)
